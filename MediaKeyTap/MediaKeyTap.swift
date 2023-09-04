@@ -14,6 +14,8 @@ public enum MediaKey {
     case next
     case rewind
     case fastForward
+    case volumeUp
+    case volumeDown
 }
 
 public enum KeyPressMode {
@@ -94,6 +96,8 @@ public class MediaKeyTap {
         case NX_KEYTYPE_NEXT: return .next
         case NX_KEYTYPE_REWIND: return .rewind
         case NX_KEYTYPE_FAST: return .fastForward
+        case NX_KEYTYPE_SOUND_UP: return .volumeUp
+        case NX_KEYTYPE_SOUND_DOWN: return .volumeDown
         default: return nil
         }
     }
