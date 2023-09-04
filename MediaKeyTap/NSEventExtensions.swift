@@ -26,7 +26,7 @@ extension NSEvent {
     }
 
     var isMediaKeyEvent: Bool {
-        let mediaKeys = [NX_KEYTYPE_PLAY, NX_KEYTYPE_PREVIOUS, NX_KEYTYPE_NEXT, NX_KEYTYPE_FAST, NX_KEYTYPE_REWIND]
+        let mediaKeys = [NX_KEYTYPE_PLAY, NX_KEYTYPE_PREVIOUS, NX_KEYTYPE_NEXT, NX_KEYTYPE_FAST, NX_KEYTYPE_REWIND, NX_KEYTYPE_SOUND_UP, NX_KEYTYPE_SOUND_DOWN]
         return isKeyEvent && mediaKeys.contains(keycode)
     }
 }
